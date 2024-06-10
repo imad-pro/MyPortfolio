@@ -1,0 +1,354 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Light gray background */
+    color: #333; /* Dark text color */
+}
+
+
+/* Apply styles to all buttons outside the header */
+body > :not(header) button,
+body > :not(header) .button,
+body > :not(header) input[type="button"],
+body > :not(header) input[type="submit"],
+body > :not(header) a.button {
+    
+    border-radius: 12.5px; /* Increased Rounded corners, 2 times shorter */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Added box shadow */
+    padding: 8px 12px; /* Adjusted padding for shorter button */
+    font-size: 14px; /* Reduced font size */
+    transition: all 1s ease; /* Slower transition */
+    
+}
+
+/* Apply hover effect to all buttons outside the header */
+body > :not(header) button:hover,
+body > :not(header) .button:hover,
+body > :not(header) input[type="button"]:hover,
+body > :not(header) input[type="submit"]:hover,
+body > :not(header) a.button:hover {
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2); /* Increased box shadow on hover */
+    transform: translateY(-3px); /* Slight upward lift on hover */
+}
+
+.container > h2,
+.posts h2,
+.about-me h2,
+.experience h2,
+.education h2,
+#skills h2,
+#licenses h2,
+#recommendations h2 {
+    font-size: 20px; /* Adjust font size */
+    margin-bottom: 10px; /* Add margin below the heading */
+    color: #333; /* Dark text color */
+}
+
+
+/* Header Styles */
+header {
+    max-width: 85%;
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    margin: 20px auto 0;
+    border-radius: 8px;
+}
+
+/* Home Button Styles */
+.homepage-button {
+    margin-top: 30px; /* Increase margin top for better alignment */
+    text-align: left; /* Align the button to the left */
+    order: -1; /* Move the home button to the beginning of the flex container */
+}
+
+.home-button {
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 18px;
+    background-color:#007d7d;
+    color: white;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.home-button:hover {
+    background-color: #495057;
+    color: white;
+}
+
+/* Contact Buttons Styles */
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between buttons */
+    margin-top: 30px; /* Space from the top elements */
+}
+
+header .contact-buttons .button {
+    padding: 10px 15px;
+    border: 2px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    position: relative; /* Required for pseudo-elements */
+    overflow: hidden; /* Ensures pseudo-elements don't overflow */
+}
+header .contact-buttons .button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #005f73; /* Dark teal border */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+header .contact-buttons .button:hover::before {
+    opacity: 1; /* Reveal the border on hover */
+}
+/* Specific Contact Button Styles */
+.appointment {
+    background-color: #b6b10a; /* Teal color for appointment button */
+    color: #fff; /* White text color */
+    padding: 15px 20px; /* Larger size */
+    margin-right: 20px; /* Move a bit to the left */
+    transition: all 0.3s ease; /* Smoother transition */
+}
+
+/* Adjust hover effect */
+.appointment:hover {
+    background-color: #006666; /* Darker shade of teal on hover */
+}
+
+.linkedin {
+    background-color: #0077b5; /* Black for LinkedIn */
+    color: #fff;
+}
+
+.upwork {
+    background-color:#6fda44; /* Yellow for Upwork */
+    color: #333; /* Dark text color for visibility */
+}
+
+.email {
+    background-color: red; /* Red for Email */
+    color: #fff;
+}
+
+.phone {
+    background-color: blue; /* Blue for Phone */
+    color: #fff;
+}
+
+.button:hover {
+    opacity: 0.8; /* Slight transparency on hover */
+}
+
+/* Profile Styles */
+.profile {
+    display: flex;
+    margin-bottom: 10px; /* Add margin to separate profile from button */
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 20px; /* Add some space between the image and the text */
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    margin-left: 20px;
+}
+
+.profile-info p {
+    margin-left: 0;
+}
+
+.profile-info h1 {
+    color: #FFA500; /* Change the color of the welcome message */
+    font-family: 'Roboto', sans-serif; /* Change the font of the welcome message */
+    font-size: 2em; /* Increase the size of the welcome message */
+    text-shadow: 2px 2px #333; /* Add a shadow to the welcome message */
+    animation: color-change 4s infinite; /* Add animation to change color */
+}
+
+/* Define the animation */
+@keyframes color-change {
+    0% {color: #FFA500;} /* Orange */
+    50% {color: #0000ff;} /* Blue */
+    100% {color: #FFA500;} /* Orange */
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow items to wrap as needed */
+    gap: 25px;
+}
+
+nav a {
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Text color */
+    font-weight: 600;
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
+}
+
+nav a:hover {
+    background-color: #007d7d; /* Darker shade of gray background color on hover */
+    color: #fff; /* White text color on hover */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Slight shadow on hover */
+}
+
+
+/* Gradual transition for medium screens */
+@media (max-width: 1024px) {
+    
+
+
+    nav ul {
+        justify-content: flex-start; /* Align items to the start */
+    }
+
+    nav a {
+        margin: 5px; /* Smaller margin for tighter spacing */
+        flex: 1 1 auto; /* Allow flexible widths but respect content size */
+    }
+}
+
+/* Vertical layout for small screens */
+@media (max-width: 768px) {
+    .profile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-info {
+        align-items: center; /* Center the text elements */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    nav a {
+        width: 100%; /* Full width links */
+        margin: 40px 0; /* Margin only on top and bottom */
+        text-align: center; /* Center text for a cleaner look */
+    }
+    .contact-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Center buttons horizontally */
+    }
+
+    .contact-buttons button {
+        width: 100%; /* Full width for each button */
+        margin-bottom: 10px; /* Add space between buttons */
+    }
+}
+
+/* Adjustments for very small screens */
+@media (max-width: 480px) {
+    nav a {
+        padding: 8px 10px; /* Slightly smaller padding */
+    }
+    .contact-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Center buttons horizontally */
+    }
+
+    .contact-buttons button {
+        width: 80%; /* Set a percentage width */
+        margin-bottom: 10px; /* Add space between buttons */
+    }
+}
+
+/* About Me Section */
+.about-me {
+    margin: 0 auto; /* Center the about-me section */
+    max-width: 85%; /* Limit the maximum width */
+    display: block; /* Show the about me section by default */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    margin: 20px auto 0;
+    border-radius: 8px;
+}
+
+.about-me h2 {
+    background-color: #f0f0f0; /* Light grey background for a professional look */
+    color: #333; /* Dark grey text color for readability */
+    margin-bottom: 20px; /* Increased bottom margin for better spacing */
+    padding: 10px 15px; /* Padding for better readability and appearance */
+    font-size: 24px; /* Slightly larger font size for prominence */
+    border-left: 5px solid #007BFF; /* Blue left border for a polished look */
+    font-family: 'Arial', sans-serif; /* Professional and clean font */
+}
+
+/* Default styles for header content */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Default styles for linkedin cover */
+.linkedin-cover {
+    width: 100%;
+    height: 300px;
+    justify-content: right; /* Not sure what you intended here */
+    padding-bottom: 20px;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 1200px) {
+    /* Adjustments for medium-sized screens */
+    .linkedin-cover {
+        height: 250px; /* Adjust height as needed */
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    /* Adjustments for small laptops and tablets */
+    .linkedin-cover {
+        height: 200px; /* Adjust height as needed */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* Adjustments for tablets and large phones */
+    .linkedin-cover {
+        height: 150px; /* Adjust height as needed */
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    /* Adjustments for small phones */
+    .linkedin-cover {
+        height: 100px; /* Adjust height as needed */
+    }
+}
+
+
+  
+  

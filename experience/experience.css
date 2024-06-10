@@ -1,0 +1,57 @@
+/* Experience Section */
+.experience {
+    padding: 20px;
+    max-width: 1200px;
+    text-align: left;
+    position: relative;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    margin: 10px 30px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.experience .container {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.experience h2 {
+    background-color: #f0f0f0; /* Light grey background for a professional look */
+    color: #333; /* Dark grey text color for readability */
+    margin-bottom: 20px; /* Increased bottom margin for better spacing */
+    padding: 10px 15px; /* Padding for better readability and appearance */
+    font-size: 24px; /* Slightly larger font size for prominence */
+    border-left: 5px solid #007BFF; /* Blue left border for a polished look */
+    font-family: 'Arial', sans-serif; /* Professional and clean font */
+}
+
+
+.experience-card {
+    display: flex;
+    align-items: center;
+}
+
+.experience-card .logo {
+    width: 2cm;
+    height: 2cm;
+    margin-right: 10px;
+}
+
+.experience-card .details {
+    flex-grow: 1;
+}
+
+.experience-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+

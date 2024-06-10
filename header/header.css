@@ -1,0 +1,145 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Light gray background */
+    color: #333; /* Dark text color */
+}
+
+/* Header Styles */
+header {
+    max-width: 1180px;
+    background-color: #fff;
+    padding: 20px 30px; /* Adjusted padding for better spacing */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 10px 30px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+header h2 {
+    margin-top: 0;
+    margin-bottom: 20px; /* Good spacing below the heading */
+    font-size: 24px; /* Professional font size */
+    color: #007d7d; /* Accent color matching the buttons */
+}
+
+.homepage-button {
+    align-self: flex-start; /* Aligns the home button to the left */
+    margin-bottom: 20px; /* Adds space between the home button and the header title */
+}
+
+.home-button {
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 18px;
+    background-color: #007d7d;
+    color: white;
+    display: inline-block;
+}
+
+.home-button:hover {
+    background-color: #495057;
+    color: white;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+header .contact-buttons .button {
+    padding: 10px 15px;
+    border: 2px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+header .contact-buttons .button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #005f73;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+header .contact-buttons .button:hover::before {
+    opacity: 1;
+}
+
+.appointment {
+    background-color: #b6b10a;
+    color: #fff;
+    padding: 15px 20px;
+    transition: all 0.3s ease;
+}
+
+.appointment:hover {
+    background-color: #006666;
+}
+
+.linkedin {
+    background-color: #0077b5;
+    color: #fff;
+}
+
+.upwork {
+    background-color: #6fda44;
+    color: #333;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+/* Default styles for header content */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Default styles for linkedin cover */
+.linkedin-cover {
+    width: 100%;
+    height: 300px;
+    justify-content: right; /* Not sure what you intended here */
+    padding-bottom: 20px;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 1200px) {
+    /* Adjustments for medium-sized screens */
+    .linkedin-cover {
+        height: 250px; /* Adjust height as needed */
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    /* Adjustments for small laptops and tablets */
+    .linkedin-cover {
+        height: 200px; /* Adjust height as needed */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* Adjustments for tablets and large phones */
+    .linkedin-cover {
+        height: 150px; /* Adjust height as needed */
+    }
+}

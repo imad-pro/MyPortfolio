@@ -1,0 +1,212 @@
+/* Experience Section */
+.education {
+    padding: 20px;
+    max-width: 1200px;
+    text-align: left;
+    position: relative;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    margin: 10px 30px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.education .container {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.education h2 {
+    background-color: #f0f0f0; /* Light grey background for a professional look */
+    color: #333; /* Dark grey text color for readability */
+    margin-bottom: 20px; /* Increased bottom margin for better spacing */
+    padding: 10px 15px; /* Padding for better readability and appearance */
+    font-size: 24px; /* Slightly larger font size for prominence */
+    border-left: 5px solid #007BFF; /* Blue left border for a polished look */
+    font-family: 'Arial', sans-serif; /* Professional and clean font */
+}
+
+
+
+.education-card {
+    display: flex;
+    align-items: center; /* Align logo and details vertically */
+}
+
+
+
+.education-card .details {
+    flex-grow: 1; /* Allow details to expand to fill available space */
+}
+
+/* Adjustments for aligning logo with h3 */
+.education-card h3 {
+    display: flex;
+    align-items: center;
+}
+.education-logo {
+    width: 60px; /* Adjust the width as needed */
+    height: auto;
+    float: left; /* Align the image to the left */
+    margin-right: 10px; /* Add some space between the image and the text */
+}
+
+.info-wrapper {
+    clear: both; /* Clear the float */
+}
+
+.sub-info {
+    display: block; /* Ensure the sub-info is on its own line */
+    overflow: hidden; /* Clear the float */
+    line-height: 20px; /* Adjust line height to match the image height */
+}
+
+.sub-info {
+    display: block; /* Ensure the sub-info is on its own line */
+    overflow: hidden; /* Clear the float */
+    line-height: 20px; /* Adjust line height to match the image height */
+}
+
+/* Licenses & Certifications Section */
+#licenses {
+    padding: 20px;
+    max-width: 1200px;
+    text-align: left; /* Align title and button to the left */
+    position: relative; /* Set position relative for button positioning */
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    margin: 10px 30px;
+    border-radius: 8px;
+    margin-bottom: 20px; /* Add margin to separate from other sections */
+    display: block;
+}
+
+#licenses h2 {
+    background-color: #f0f0f0; /* Light grey background for a professional look */
+    color: #333; /* Dark grey text color for readability */
+    margin-bottom: 20px; /* Increased bottom margin for better spacing */
+    padding: 10px 15px; /* Padding for better readability and appearance */
+    font-size: 24px; /* Slightly larger font size for prominence */
+    border-left: 5px solid #007BFF; /* Blue left border for a polished look */
+    font-family: 'Arial', sans-serif; /* Professional and clean font */
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px; /* Increased space between buttons */
+}
+
+#licenses button {
+    padding: 10px 20px; /* Adjust padding for better clickability */
+    font-size: 16px; /* Adjust font size */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    background-color: #007bff; /* Blue color */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+#licenses button:first-child {
+    margin-right: 20px; /* Adjust the space between the buttons */
+}
+
+#licenses button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Container for all licenses */
+#licenses-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Space between license items */
+}
+
+/* Individual License Item */
+.license-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.issuer-logo {
+    width: 60px; /* Increased logo size */
+    height: auto;
+    margin-right: 20px; /* Increased margin right */
+}
+
+.license-info {
+    flex-grow: 1;
+}
+
+.license-info h3 {
+    font-size: 18px; /* Adjusted font size */
+    margin-bottom: 10px; /* Increased margin below heading */
+}
+
+.license-info p {
+    font-size: 14px; /* Adjusted font size */
+    margin-bottom: 5px; /* Adjusted margin */
+}
+
+.credential-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 20px; /* Increased padding */
+    font-size: 14px;
+    background-color: #4CAF50; /* Green color */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    color: #fff; /* White text color */
+}
+
+.credential-link:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .buttons-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .license-item {
+        flex-basis: calc(50% - 10px); /* Two items per row */
+        max-width: 85%;
+    }
+}
+@media (max-width: 992px) {
+    .license-item {
+        flex-basis: calc(50% - 10px); /* Two items per row */
+        max-width: 75%;
+    }
+}
+
+@media (max-width: 480px) {
+    .license-item {
+        flex-basis: 100%; /* One item per row */
+        max-width: 100%;
+    }
+}
+

@@ -1,0 +1,140 @@
+/* Footer Styles */
+footer {
+    padding: 20px;
+    max-width: 60%; /* Adjusted max-width for better centering */
+    background-color: #2c3e50; /* Inspired by top portfolio designs */
+    color: #ecf0f1; /* Light text for better readability */
+    text-align: center;
+    border: none; /* Remove border for a cleaner look */
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3); /* Enhanced shadow for depth */
+    margin: 20px auto; /* Centered with automatic margins */
+    border-radius: 10px; /* Slightly more rounded corners */
+    margin-bottom: 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap as needed */
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px; /* Add space between items */
+}
+
+.footer-contact span,
+.footer-contact a {
+    margin: 0 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ecf0f1; /* Light text for contrast */
+    transition: background-color 0.3s ease;
+}
+
+.footer-contact a:hover {
+    background-color: #34495e; /* Slightly darker on hover */
+}
+
+/* Footer Button Styles */
+.footer-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Increased space between buttons */
+    margin-top: 20px; /* Space from the top elements */
+}
+
+footer .footer-buttons .button {
+    padding: 12px 20px; /* Increased padding for better touch targets */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    color: #ecf0f1; /* Light text color */
+}
+
+.footer-contact {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center items horizontally */
+    flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+/* Specific Footer Button Styles */
+.appointment {
+    background-color: #b6b10a; /* Red color for appointment button */
+}
+
+.appointment:hover {
+    background-color: #c0392b; /* Darker shade of red on hover */
+}
+
+.linkedin {
+    background-color: #0077b5; /* Blue for LinkedIn */
+}
+
+.upwork {
+    background-color: #6fda44; /* Green for Upwork */
+}
+
+/* Responsive adjustments for gradual responsiveness */
+@media (max-width: 1200px) {
+    .footer-contact span,
+    .footer-contact a {
+        max-width: 500px; /* Adjust the max-width as needed */
+        margin: 10px auto; /* Center elements with automatic horizontal margins */
+    }
+}
+
+@media (max-width: 992px) {
+    .footer-contact span,
+    .footer-contact a {
+        max-width: 70%; /* Adjust the max-width as needed */
+    }
+    footer {
+        max-width: 70%; /* Adjust the max-width for better responsiveness */
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-contact {
+        justify-content: space-between; /* Distribute space evenly */
+    }
+    footer {
+        max-width: 75%; /* Adjust the max-width for better responsiveness */
+    }
+}
+
+@media (max-width: 576px) {
+    footer {
+        text-align: left; /* Align text to the left */
+        max-width: 85%; /* Adjust the max-width for better responsiveness */
+    }
+
+    .footer-contact {
+        justify-content: space-between; /* Distribute space evenly */
+    }
+
+    .footer-contact span,
+    .footer-contact a {
+        display: inline; /* Keep items inline */
+        margin: 0 5px; /* Adjust margins for spacing */
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 15px; /* Slightly reduce padding */
+        font-size: 0.8em; /* Reduce font size */
+        max-width: 85%; /* Adjust the max-width for better responsiveness */
+    }
+
+    .footer-contact span,
+    .footer-contact a {
+        font-size: 0.8em; /* Reduce font size for smaller screens */
+    }
+
+    .footer-buttons .button {
+        padding: 10px 15px; /* Adjust button padding */
+        font-size: 0.8em; /* Reduce button font size */
+    }
+}

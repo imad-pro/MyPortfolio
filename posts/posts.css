@@ -1,0 +1,81 @@
+/* Posts Section */
+.posts {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 10px 30px;
+    text-align: left;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin-bottom: 20px; /* Add margin to separate from other sections */
+}
+
+.posts h2 {
+    background-color: #f0f0f0; /* Light grey background for a professional look */
+    color: #333; /* Dark grey text color for readability */
+    margin-bottom: 20px; /* Increased bottom margin for better spacing */
+    padding: 10px 15px; /* Padding for better readability and appearance */
+    font-size: 24px; /* Slightly larger font size for prominence */
+    border-left: 5px solid #007BFF; /* Blue left border for a polished look */
+    font-family: 'Arial', sans-serif; /* Professional and clean font */
+}
+
+.posts-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    gap: 20px;
+}
+
+.post-card {
+    flex: 0 1 15%; /* Distribute available space equally */
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    /* Set fixed height for equal height posts */
+    
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+}
+
+.post-card img {
+    width: 100%;
+    height: auto; /* Adjust as needed */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.post-card video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+.post-card h3 {
+    font-size: 18px;
+    color: #333; 
+    margin: 15px;
+}
+
+.post-card p {
+    color: #666;
+    font-size: 14px;
+    margin: 0 15px 15px;
+}
+#togglePostsButton {
+    background-color: #F5F5DC;
+    margin-bottom: 20px;
+    /* Add other styles such as padding, border, etc., as needed */
+}
+.post-card button {
+    background-color: #ADD8E6;
+    /* Add other styles such as padding, border, etc., as needed */
+}
+

@@ -1,0 +1,63 @@
+/* Recommendation Section */
+
+.recommendation {
+    max-width: 1200px;
+    margin: 10px 30px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff; /* Light grey background */
+    border-radius: 8px;
+    position: relative;
+}
+
+h1 {
+    max-width: 1200px;
+    margin: 10px 30px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f0f0f0; /* Light grey background for a professional look */
+    color: #333; /* Dark grey text color for readability */
+    padding: 10px 15px; /* Padding for better readability and appearance */
+    font-size: 24px; /* Slightly larger font size for prominence */
+    border-left: 5px solid #007BFF; /* Blue left border for a polished look */
+    font-family: 'Arial', sans-serif; /* Professional and clean font */
+}
+
+.recommendation h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.profession {
+    font-size: 18px;
+    color: #000; /* White text color */
+    margin-bottom: 15px;
+    background-color: #cce0ff; /* Gold background color */
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.recommendation p {
+    font-size: 16px;
+    color: #333; /* Dark grey text color */
+    margin-bottom: 15px;
+}
+
+.view-linkedin-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: #1e4a6b; /* Gold background color */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.view-linkedin-btn:hover {
+    background-color: #e0c200; /* Slightly darker gold on hover */
+}
+
