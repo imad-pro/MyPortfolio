@@ -60,4 +60,6 @@
     .experience-card .logo {
         display: none;
     }
+    .experience-card img {
+        display: none;
 }
