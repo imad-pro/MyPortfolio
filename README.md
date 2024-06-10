@@ -1,36 +1,27 @@
 # My Portfolio
 
 ## Overview
-This repository hosts the source code for my personal responsive portfolio, showcasing my skills and achievements in web development. The project was completed in April 2024 as part of my Computer Science Executive Learning Path at Harvard Extension School.
+Welcome to the repository for my personal responsive portfolio project. This project showcases my skills and achievements as part of my Computer Science Executive Learning Path at HarvardX. It is designed to be user-friendly, easily navigable, and accessible across various devices.
 
 ---
 
 ## Languages & Tools
-- **HTML, CSS, and JavaScript:** Used to create a user-friendly and easily navigable interface.
+- **HTML, CSS:** Utilized to create a user-friendly and easily navigable interface.
 
 ---
 
 ## Features
-- **Responsive & Accessible:** The portfolio is designed to be fully responsive, ensuring a seamless experience across all devices. Accessibility considerations have been incorporated to enhance usability for all users.
-- **Open Source:** The project is openly shared on GitHub, welcoming community contributions and feedback.
+- **Responsive & Accessible:** The portfolio is designed to be fully responsive, ensuring a seamless experience across all screen sizes. It is openly shared on GitHub for community use and contributions.
 
 ---
 
 ## Educational Achievement
-This portfolio project represents a milestone in my journey through the Computer Science Executive Learning Path at Harvard Extension School.
-
----
-
-## Skills Demonstrated
-- **Web Development:** Proficiency in front-end development technologies.
-- **Version Control with Git and GitHub:** Utilized for project management and collaboration.
-- **JavaScript:** Implemented to enhance interactivity and functionality.
-- **Responsive Web Design:** Ensured optimal viewing experience across various devices.
+Part of my Computer Science Executive Learning Path at HarvardX.
 
 ---
 
 ## Project Repository on GitHub
-Explore the full source code and contribute to the project at the [Project Repository on GitHub](https://github.com/imad-pro/MyPortfolio).
+Explore the full project and contribute at the [Project Repository on GitHub](https://github.com/imad-pro/MyPortfolio).
 
 ---
 
