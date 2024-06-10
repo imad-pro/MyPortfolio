@@ -41,7 +41,7 @@ h1 {
 .recommendation p {
     font-size: 16px;
     color: #333; /* Dark grey text color */
-    margin-bottom: 15px;
+    margin-bottom: 40px;
 }
 
 .view-linkedin-btn {
@@ -56,6 +56,7 @@ h1 {
     cursor: pointer;
     text-decoration: none;
 }
+
 
 .view-linkedin-btn:hover {
     background-color: #e0c200; /* Slightly darker gold on hover */
