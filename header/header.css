@@ -122,6 +122,33 @@ header .contact-buttons .button:hover::before {
     padding-bottom: 20px;
 }
 
+@media (max-width: 768px) {
+    
+    .contact-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Center buttons horizontally */
+    }
+
+    .contact-buttons button {
+        width: 100%; /* Full width for each button */
+        margin-bottom: 10px; /* Add space between buttons */
+    }
+}
+
+/* Adjustments for very small screens */
+@media (max-width: 480px) {
+    
+    .contact-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Center buttons horizontally */
+    }
+
+    .contact-buttons button {
+        width: 80%; /* Set a percentage width */
+        margin-bottom: 10px; /* Add space between buttons */
+    }
+}
+
 /* Media queries for responsiveness */
 @media only screen and (max-width: 1200px) {
     /* Adjustments for medium-sized screens */

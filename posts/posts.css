@@ -69,13 +69,33 @@
     font-size: 14px;
     margin: 0 15px 15px;
 }
-#togglePostsButton {
-    background-color: #F5F5DC;
-    margin-bottom: 20px;
-    /* Add other styles such as padding, border, etc., as needed */
-}
+
 .post-card button {
     background-color: #ADD8E6;
     /* Add other styles such as padding, border, etc., as needed */
+}
+
+/* Gradual adjustments */
+@media (max-width: 1200px) {
+    .post-card {
+        flex: 0 1 15%; /* Show 2 cards per row */
+    }
+}
+
+@media (max-width: 992px) {
+    .post-card {
+        flex: 0 1 20%; /* Show fewer cards per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .post-card {
+        flex: 0 1 33%; /* Stack cards vertically */
+    }
+}
+@media (max-width: 576px) {
+    .post-card {
+        flex: 0 1 65%; /* 1 card per row */
+    }
 }
 
